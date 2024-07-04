@@ -1,0 +1,77 @@
+.department-container {
+  margin-top: 20px;
+
+  .department-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 500;
+      color: #191635;
+
+    }
+  }
+
+  .department-table {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .MuiTableContainer-root {
+      .MuiTable-root {
+        .MuiTableHead-root {
+          background-color: $secondary-color;
+          .MuiTableCell-head {
+            font-weight: bold;
+            color: $text-color;
+          }
+        }
+        .MuiTableBody-root {
+          .MuiTableRow-root {
+            &:nth-of-type(odd) {
+              background-color: rgba($secondary-color, 0.3);
+            }
+            &:hover {
+              background-color: rgba($secondary-color, 0.5);
+            }
+            .MuiTableCell-body {
+              border-bottom: 1px solid $border-color;
+            }
+          }
+        }
+      }
+    }
+
+    .MuiTablePagination-root {
+      .MuiTablePagination-toolbar {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    img {
+      object-fit: cover;
+      border-radius: 4px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  padding: 20px;
+}

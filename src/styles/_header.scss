@@ -1,0 +1,56 @@
+.header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    color: $primary-color;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .search-bar {
+    flex-grow: 1;
+    max-width: 400px;
+    background-color: $secondary-color;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    
+    input {
+      border: none;
+      background: transparent;
+      outline: none;
+      width: 100%;
+      margin-left: 10px;
+    }
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+
+    .MuiIconButton-root {
+      color: $text-color;
+      margin-left: 10px;
+    }
+
+    .MuiAvatar-root {
+      width: 32px;
+      height: 32px;
+    }
+
+    .MuiTypography-root {
+      margin: 0 4px;
+    }
+
+    .MuiSvgIcon-root {
+      color: $text-color;
+    }
+  }
+}
